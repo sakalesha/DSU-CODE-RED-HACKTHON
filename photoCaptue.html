@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Photo with Webcam</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            background-image: url(photo-capture.jpg);
+        }
+
+        .photo-capture-title {
+            color: white;
+        }
+
+        video, canvas {
+            border: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        #captureButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #captureButton:hover {
+            background-color: #0056b3;
+        }
+
+        .comment-box {
+            height: 50px;
+            width: 500px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .
+    </style>
+</head>
+<body>
+    <h1 class="photo-capture-title">Click The Photo</h1>
+    <video id="video" width="640" height="480" autoplay></video>
+    <button id="captureButton">Capture Photo</button>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <input class="comment-box" type="text" placeholder="Comment">
+    
+    <button id="captureButton">
+        <a href="photo-submit.html">Submit</a>
+    </button>
+
+    <script>
+        (async function() {
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            const context = canvas.getContext('2d');
+            const captureButton = document.getElementById('captureButton');
+
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream;
+
+                captureButton.addEventListener('click', () => {
+                    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+                });
+            } catch (err) {
+                console.error('Error accessing the camera: ', err);
+                alert('Error accessing the camera: ' + err.message);
+            }
+        })();
+    </script>
+</body>
+</html>

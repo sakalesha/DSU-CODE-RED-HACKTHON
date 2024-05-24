@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Environment Saviour</title>
+    <link rel="stylesheet" href="eco.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <link rel="icon" type="image/png" href="logo.jpg"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+              <h1 class="project-title">Environment Saviour</h1>
+                <ul>
+                  <a href="#home"><button class="header-button">Home</button></a>
+                  <a href="map.html"><button class="header-button">Map</button></a>
+                  <a href="#about"><button class="header-button">About Us</button></a>
+                  <a href="#services"><button class="header-button">Services</button></a>
+                  <a href="#contact"><button class="header-button">Contact</button></a> <!-- Updated here -->
+                  <button class="header-button">
+                      <a href="login.html" style="color: white; text-decoration: none;">Login</a>
+                  </button>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    
+    <!-- Home section with an id -->
+    <div id="home">
+      <img src="about-us-img.jpg" class='back-img'>
+      <p class="info">Let's Make The World Cleaner And Greener</p>
+    </div>
+
+    <!-- About Us section with an id -->
+    <div id="about" class="about-me">
+        <div class="about-me-text">
+          <h2>About Us</h2>
+          <p>At Environment Saviour, we are dedicated to fostering environmental awareness and facilitating grassroots action for a healthier planet. Our platform empowers individuals and communities to report environmental issues, organize cleanup events, and engage in meaningful discussions about sustainability.</p>
+        </div>
+        <img src="about.jpg" alt="me">
+    </div>
+
+    <p class="bin-p">Choose the type of waste</p>
+    <div class="bin">
+        <div>
+            <a href="photo.html"><img class="bin-img" src="dustpins/d1.jpg" alt=""></a>
+        </div>
+        <div>
+            <a href="photo.html"><img class="bin-img" src="dustpins/d2.jpg" alt=""></a>
+        </div>
+        <div>
+            <a href="photo.html"><img class="bin-img" src="dustpins/d3.jpg" alt=""></a>
+        </div>
+        <div>
+            <a href="photo.html"><img class="bin-img" src="dustpins/d4.jpg" alt=""></a>
+        </div>
+    </div>
+
+    <p class="contribution-heading">Our Contributions</p>
+<div class="contribution-section">
+    <div class="contribution-card">
+        <img class="contribution-img" src="dustpins/cont.jpg" alt="Plastic Collected">
+        <p class="contribution-text">200 tons of plastic collected</p>
+    </div>
+    <div class="contribution-card">
+        <img class="contribution-img" src="dustpins/cont1.jpg" alt="Recycled">
+        <p class="contribution-text">150 tons recycled</p>
+    </div>
+    <div class="contribution-card">
+        <img class="contribution-img" src="dustpins/cont2.jpg" alt="Environmental Impact">
+        <p class="contribution-text">Significant environmental impact</p>
+    </div>
+</div>
+
+
+    
+
+   <!-- Services section with an id -->
+   <section id="services">
+      <div class="row">
+        <h2 class="section-heading">Our Services</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img class="Services-img" src="envi.jpg" alt="">
+            </div>
+            <h3>Environmental Consulting</h3>
+            <p>Sustainability strategies enhance business resilience, reduce costs, and improve reputation in the market.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img class="Services-img" src="envi2.jpg" alt="">
+            </div>
+            <h3>Waste Management</h3>
+            <p>Hazardous waste disposal ensures safe handling and treatment, preventing harm to human health and ecosystems.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img class="Services-img3" src="envi3.jpg" alt="">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <h3>Pollution Control</h3>
+            <p>Contaminant removal technologies clean up environmental spills, preventing harm to ecosystems and waterways.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img class="Services-img" src="envi4.jpg" alt="">
+              <i class="fas fa-truck-pickup"></i>
+            </div>
+            <h3>Renewable Energy Services</h3>
+            <p>Wind turbines convert wind energy into electricity, contributing to renewable energy goals and reducing carbon emissions.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img class="Services-img5" src="envi5.jpg" alt="">
+              <i class="fas fa-broom"></i>
+            </div>
+            <h3>Water Management</h3>
+            <p>Implementing strategies to reduce water usage. Designing systems to manage and treat stormwater runoff.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img class="Services-img" src="envi6.jpg" alt="">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3>Environmental Technology Solution</h3>
+            <p>Providing technologies to control and reduce pollution. Offering innovative</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section with an id -->
+    <section id="contact">
+        <div class="row">
+            <h2 class="section-heading">Contact Us</h2>
+        </div>
+        <div class="row">
+            <form action="submit_form.php" method="post">
+                <div class="column">
+                    <label for="name">Name:</label>
+                    <input class="text" type="text" id="name" name="name" required placeholder="Enter Your Name">
+                </div>
+                <div class="column">
+                    <label for="email">Email:</label>
+                    <input class="text" type="email" id="email" name="email" required placeholder="Enter Your Email id">
+                </div>
+                <div class="column">
+                    <label  for="message">Message:</label>
+                    <textarea class="text" id="message" name="message" rows="4" required></textarea placeholder="Enter a Message">
+                </div>
+                <div class="column">
+                    <button class="submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div>
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.jpg" alt="Eco-Friendly Practices Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Join Us</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="try.html">Volunteer Coordination</a></li>
+                    <li><a href="#">Blog/News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/facebook/"><img src="facebook.jpg" alt="Facebook"></a>
+                <a href="https://x.com/?lang=en-in"><img src="twitter.webp" alt="Twitter"></a>
+                <a href="https://www.instagram.com/?hl=en"><img src="insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            © 2024 Eco-Friendly Practices. All rights reserved.
+        </div>
+    </footer>
+    
+    </div>
+</body>
+</html>

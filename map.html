@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <link rel="icon" type="image/png" href="logo.jpg"/>
+</head>
+<body>
+    <header>
+        <h1>Environment Saviour</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#map">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="map">
+            <h2>Map View</h2>
+            <div id="mapContainer"></div>
+            <div id="filters">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="">All</option>
+                    <option value="litter">Litter</option>
+                    <option value="pollution">Pollution</option>
+                    <option value="deforestation">Deforestation</option>
+                </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+
+                <label for="urgency">Urgency:</label>
+                <select id="urgency">
+                    <option value="">All</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <button id="filterBtn">Filter</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 EcoWatch</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Eco-Friendly Practices Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li>Jion Us</li>
+                    <li>Donate</li>
+                    <a href="try.html" style="color: white;"> <li>Volunteer Coordination</li> </a>
+                    <li>Blog/News</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/facebook/"><img src="facebook.jpg" alt="Facebook"></a>
+                <a href="https://x.com/?lang=en-in"><img src="twitter.webp" alt="Twitter"></a>
+                <a href="https://www.instagram.com/?hl=en"><img src="insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            © 2024 Eco-Friendly Practices. All rights reserved.
+        </div>
+        </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
